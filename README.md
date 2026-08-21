@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Employee Management System — Backend (Spring Boot)
 
 Group ID: 2026-Y2-S1-MLB-B10G1-05 · Module: SE2030 Software Engineering
@@ -141,3 +142,6 @@ create Manager/Employee accounts (each creation also makes their login).
   in the topbar would be a natural next addition.
 - Consider triggering `NotificationService.create(...)` from `LeaveService`/`PayrollService` on
   approval/rejection/payment events so the notification feed has real content.
+=======
+# EMS_Test
+>>>>>>> 12dde2a12072566c8484f148584fd1c426212e33

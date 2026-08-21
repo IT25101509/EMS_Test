@@ -1,0 +1,82 @@
+/* ---------------------------------------------------------------------
+   Design tokens — "Personnel Ledger"
+   A theme grounded in the subject: physical HR record-keeping. Deep
+   ink-navy for structure and authority, manila-folder tan for records/
+   cards, a rubber-stamp red for status and action. Serif for headings
+   (ledger heading plates), plain sans for data, mono for numbers/IDs.
+   --------------------------------------------------------------------- */
+:root {
+  /* Colour */
+  --ink-900: #1b2436;
+  --ink-700: #2c3852;
+  --ink-500: #4c5a78;
+  --ink-300: #8792a8;
+  --paper: #faf8f4;
+  --paper-raised: #ffffff;
+  --folder: #e7dcc2;
+  --folder-dark: #cdbd93;
+  --line: #dcd4bf;
+  --line-strong: #b9ac8a;
+  --stamp-red: #a83a2c;
+  --stamp-red-ink: #7c2a20;
+  --stamp-green: #3c6b47;
+  --stamp-amber: #a9741f;
+  --stamp-slate: #566172;
+
+  /* Type */
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  /* Scale */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --shadow-card: 0 1px 2px rgba(27, 36, 54, 0.06), 0 1px 0 rgba(27, 36, 54, 0.04);
+  --shadow-pop: 0 8px 24px rgba(27, 36, 54, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink-900);
+  margin: 0 0 0.4em;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--stamp-red);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
